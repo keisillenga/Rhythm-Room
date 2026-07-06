@@ -1,0 +1,18 @@
+header{
+  width:100%;
+  display:flex;
+  juustify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:#111;
+  position:sticky;
+  top:0;
+  z-index:999;
+  box-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+header h1{
+  color:#ff1f4d;
+  font-size:34px;
+
+  letter-spacing:2px;
+}

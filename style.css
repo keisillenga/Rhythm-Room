@@ -16,3 +16,19 @@ header h1{
 
   letter-spacing:2px;
 }
+nav{
+  display:flex;
+  gap:20px;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:10px 20px;
+  border-radius:30px;
+  transition:.3s;
+}
+nav a:hover{
+  background:#d90429;
+  transform:translateY(-3px);
+}
+  

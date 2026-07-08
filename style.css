@@ -31,4 +31,26 @@ nav a:hover{
   background:#d90429;
   transform:translateY(-3px);
 }
+.hero{
+  height:90vh;
+  background:liner-gradient(0,0,0,.65),rgba(0,0,0,.75);
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:center;
+  text-align:center;
+}
+.hero h2{
+  front-size:70px;
+  margin-bottom:20px;
+}
+.hero p{
+  front-size:20px;
+  width:700px;
+  max-width:90%;
+  color:#ddd;
+  margin-bottom:35px;
+}
   

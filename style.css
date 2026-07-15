@@ -75,5 +75,18 @@ section h2{
   font-size:45px;
   margin-bottom:50px;
 }
-
+p{
+  color:#cfcfcf;
+  line-height:1.7;
+}
+h3{
+  margin-bottom:15px;
+}
+a{
+  transition:.3s;
+}
+img{
+  width:100%;
+  display:block;
+}
   

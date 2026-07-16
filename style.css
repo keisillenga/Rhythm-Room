@@ -89,4 +89,11 @@ img{
   width:100%;
   display:block;
 }
-  
+footer{ 
+  background:#111;
+  padding:30px;
+  text-align:center;
+  color:#999;
+  margin-top:80%;
+  border-top:1px solid #222;
+}

@@ -162,4 +162,27 @@ footer{
   background:white;
   color:#111;
 }
+lesson{
+  background:#171717;
+  border-left: 6px solid #d90429;
+  margin:30px auto;
+  padding:30px;
+  border-radius:18px;
+  transition:.4s;
+  max-width:1000px;
+}
+.lesson:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 20 rgba(255,0,70,.5);
+}
+.lesson h3{
+  color:#ff3155;
+  margin-bottom:15px;
+}
+.lesson ul{
+  margin-left:25px;
+}
+.lesson li{
+  margin:12px 0;
+}
   

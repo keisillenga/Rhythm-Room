@@ -185,4 +185,19 @@ lesson{
 .lesson li{
   margin:12px 0;
 }
+.song-list{
+  margin-top:30px;
+}
+.song-list li{
+  background:#1e1e1e;
+  padding:18px;
+  margin:15px 0;
+  border-radius:12px;
+  list-style:none;
+  transition:.3s;
+}
+.song-list li:hover{
+  background:#d90429;
+  transform:translateY(10px);
+}
   

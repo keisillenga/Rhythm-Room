@@ -200,4 +200,24 @@ lesson{
   background:#d90429;
   transform:translateY(10px);
 }
+.feature-box{
+  background:#181818;
+  border-radius:18px;
+  padding:30px;
+  text-align:center;
+  transition:.4s;
+  border:1px solid #252525;
+}
+.feature-box:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 20px rgba(255,0,70,.5);
+}
+.feature-box i{
+  font-size:55px;
+  color:#ff3155;
+  margin-bottom:20px;
+}
+.feature-box h3{
+  margin-bottom:15px;
+}
   

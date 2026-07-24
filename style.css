@@ -248,4 +248,15 @@ lesson{
   margin-bottom:20px;
   font-size:35px;
 }
+.banner{
+  height:350px;
+  border-radius:20px;
+  overflow:hidden;
+  margin-bottom:50px;
+}
+.banner img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
   

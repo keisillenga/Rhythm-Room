@@ -259,4 +259,31 @@ lesson{
   height:100%;
   object-fit:cover;
 }
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:40px;
+  over-flow:hidden;
+  border-radius:15px;
+  background:#161616;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+th{
+  background:#d90429;
+  color:white;
+  padding:18px;
+  font-size:18px;
+}
+td{
+  padding:18px;
+  text-align:center;
+  color:#ddd;
+  border-bottom:1px solid #252525;
+}
+tr{
+  transition:.3s;
+}
+tr:hover{
+  background:#242424;
+}
   

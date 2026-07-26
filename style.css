@@ -286,4 +286,28 @@ tr{
 tr:hover{
   background:#242424;
 }
+.profile-card{
+  width:700px;
+  max-width:95px;
+  margin:40px auto;
+  background:#171717;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+.profile-card img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:20px;
+  border:5px solid #d90429;
+}
+.profile-card h2{
+  margin-bottom:15px;
+}
+.profile-card p{
+  margin:10px 0;
+}
   

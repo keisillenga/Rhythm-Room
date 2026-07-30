@@ -339,4 +339,15 @@ tr:hover{
 .practice-box button{
   margin-top:20px;
 }
+.about{
+  max-width:1000px;
+  margin:auto;
+  line-height:1.9;
+  font-size:18px;
+  color:#d5d5d5;
+}
+.about img{
+  border-radiu:20px;
+  margin-bottom:30px;
+}
   

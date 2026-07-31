@@ -350,4 +350,31 @@ tr:hover{
   border-radiu:20px;
   margin-bottom:30px;
 }
+form{
+  max-width:700px;
+  margin:40px auto;
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+}
+input,
+textarea{
+  background:#1d1d1d;
+  border:none;
+  padding:18px;
+  color:white;
+  border-radius:12px;
+  font-size:16px;
+  transition:.3s;
+}
+input:focus,
+textarea:focus{
+  outline:none;
+  border:1px solid #d90429;
+  box-shadow:0 0 15px rgba(250,0,70,.5);
+}
+textarea{
+  min-height:180px;
+  resize:none;
+}
   

@@ -377,4 +377,17 @@ textarea{
   min-height:180px;
   resize:none;
 }
+.search{
+  width:500px;
+  max-width:90%;
+  margin:40px auto;
+  display:flex;
+}
+.search input{
+  flex:1;
+  border-radius:40px 0 0 40px;
+}
+.search button{
+  border-radius:0 40px 40px 0;
+}
   

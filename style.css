@@ -390,4 +390,13 @@ textarea{
 .search button{
   border-radius:0 40px 40px 0;
 }
+.badge{
+  display:inline-block;
+  padding:6px 15px;
+  border-radius:30px;
+  background:#d90429;
+  color:white;
+  font-size:14px;
+  margin-left:10px;
+}
   

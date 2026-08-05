@@ -419,4 +419,28 @@ textarea{
     opacity:1;
     transform:translateY(0);
   }
+  .music-note{
+     position:fixed;
+     color:rgba(255,255,255,.08);
+     font-size:40px;
+     animation:floatNotes 15s linear infinite;
+     pointer-events:none;
+}
+@keyframes f;oatNotes{
+  0%{
+     transform:translateY(100vh) rotate(0deg);
+     opacity:0;
+}
+20%{
+    opacity:.3;
+}
+80%{
+    opacity:.3;
+}
+100%{
+     transform:translateY(-120vh) rotate(360deg);
+     opacity:0;
+}
+}
+
   

@@ -442,5 +442,11 @@ textarea{
      opacity:0;
 }
 }
+.img{
+   transition:.5s;
+}
+img:hover{
+  filter:brightness(1.1);
+}
 
   

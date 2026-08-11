@@ -467,6 +467,43 @@ img:hover{
   font-size:20px;
   margin-bottom:70px;
 }
+.hero h2{
+  animation:slideDown 1s;
+}
+.hero p{
+  animation:slideUp 1.2s;
+}
+.hero button{
+  animation:fadeButton 1.4s;
+}
+@keyframes slideDown{
+  from{
+    opacity:0;
+    transform:translateY(-60px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+@keyframes slideUp{
+  from{
+    opacity:0;
+    transform:translateY(60px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+@keyframes fadeButton{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
 .flex{
   display:flex;
   justify-content:center;

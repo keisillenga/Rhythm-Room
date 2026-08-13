@@ -522,5 +522,14 @@ img:hover{
 .scale:hover{
   transform:scale(1.05);
 }
+.hero h2{
+  animation:slideDown 1s;
+}
+.hero  p{
+  animation:slideUp 1.2s;
+}
+.hero button{
+  animation:fadeButton 1.4s;
+}
 
   

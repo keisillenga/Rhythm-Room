@@ -560,6 +560,23 @@ img:hover{
   }
 }
 @media(max-width:992px){
+header{
+  flex-direction:column;
+  gap:20px;
+}
+nav{
+  flex-wrap:wrap;
+  justify-conteent:center;
+}
+.hero h2{
+  font-size:48px;
+}
+.hero p{
+  font-size:18px;
+}
+.card{
+  grid-template-column:repeat(2,1fr);
+}
   
 
 

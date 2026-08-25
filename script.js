@@ -34,5 +34,24 @@ animatedElements.forEach(function(element) {
 
   observer.observe(element);
 });
+const searchInput =  document.querySelector(".search input");
+if (searchInput) {
+  searchInput.addEventListener("input", function() {
+    const searchText = searchInput.value.toLowerCase();
+    const rows = document.querySelectorAll("table tr");
+    rows.forEach(function(row, index) {
+      if (index === 0) {
+        return;
+      }
+      const songName = row.textContent.toLowerCase();
+      if (songName.includes(searchText)) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  });
+}
+        
     
   

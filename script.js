@@ -52,6 +52,38 @@ if (searchInput) {
     });
   });
 }
+let timerSeconds = 0;
+let timerInterval = null;
+function startTimer() {
+  if (timerInterval !== null) {
+    return;
+  }
+  timerInterval = setInterval(function() {
+    timerSeconds++;
+    updateTimer();
+  }, 1000);
+}
+function stopTimer() {
+  clearInterval(timerInterval);
+  timerInterval = null;
+}
+function resetTimer() {
+  stopTimer();
+  timerSeconds = 0;
+  updateTimer();
+}
+function updateTimer() {
+  const timer = document.getElementById("timer");
+  if (!timer) {
+    return;
+  }
+  const minutes = Math.floor(timerSeconds / 60);
+  const seconds = timerSeconds % 60;
+  timer.textContent =
+    String(minutes).padStart(2, "0") +
+    ":";
+    String(seconds).padStart(2, "0");
+}
         
     
   

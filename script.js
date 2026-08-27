@@ -84,6 +84,30 @@ function updateTimer() {
     ":";
     String(seconds).padStart(2, "0");
 }
+const startTimerButton = 
+  document.getElementById("startTimer");
+const stopTimerButton =
+  document.getElementById("stopTimer");
+const resetTimeButton =
+  document.getElementById("resetTime");
+if(startTimerButton) {
+  startTimerButton.addEventListener(
+    "click",
+    startTimer
+    );
+}
+if(stopTimerButton) {
+  stopTimerButton.addEventListener(
+    "click",
+    stopTimer
+    );
+}
+if(resetTimerButton) {
+  resetTimerButton.addEventListener(
+    "click",
+    resetTimer
+    );
+}
         
     
   

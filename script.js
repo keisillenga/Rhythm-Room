@@ -108,6 +108,25 @@ if(resetTimerButton) {
     resetTimer
     );
 }
+const lessons = document.querySelectorAll(".lesson");
+lesson.forEach(function(lesson, index) {
+  const button = document.createElement("button");
+  button.textContent = "Mark as Complete";
+  button.classList.add("lesson-button");
+  lesson.appendChild(button);
+  button.addEventListener("click", function() {
+    lesson.classList.toggle("completed");
+    if (lesson.classList.contains("completed")) {
+      button.textContent = " Completed ";
+      button.style.background = "#16803c";
+    } else {
+      button.tectContent = "Mark as Complete";
+      button.style.background = "";
+    }
+    saveProgress();
+  });
+});
+      
         
     
   

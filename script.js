@@ -126,6 +126,16 @@ lesson.forEach(function(lesson, index) {
     saveProgress();
   });
 });
+function saveProgress() {
+  const completedLessons =
+    document.querySelectorAll(
+      ".lesson.completed"
+      ).length;
+  localStorage.setItem(
+    "completedLessons",
+    completedLessons
+    );
+}
       
         
     

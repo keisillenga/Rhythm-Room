@@ -136,6 +136,32 @@ function saveProgress() {
     completedLessons
     );
 }
+function loadProgress() {
+  const completedLessons =
+    praseInt(
+      localStorage.getItem(
+        "completedLessons"
+        )
+      ) || 0;
+  const lessonElements =
+    document.querySelectorAll(".lesson");
+  lessonElements.forEach(function(lesson, index) {
+    if (index < completedLessons) {
+      lesson.classList.add("completed");
+      const button =
+        lesson.querySelector(
+          ".lesson-button"
+          );
+      if (button) {
+        button.textContent =
+          " Completed ";
+        button.style.background =
+          "#16803c";
+      }
+    }
+  )};
+}
+loadProgress();
       
         
     

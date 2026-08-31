@@ -162,6 +162,41 @@ function loadProgress() {
   )};
 }
 loadProgress();
+function updateProgress() {
+  const progressBar =
+    document.querySelector(
+      ".progress span"
+      );
+  const totalLessons =
+    document.querySelectorAll(
+      ".lesson"
+      ).length;
+  const completedLessons =
+    document.querySelectorAll(
+      ".lesson.completed"
+      ).length;
+  if (
+    progressBar &&
+    totalLessons > 0
+    ) {
+    const percentage =
+      (completedLessons / totalLessons) * 100;
+    progressBar.style.width =
+      percentage + "%";
+  }
+}
+document.addEventListener(
+  "click",
+  function(event) {
+    if (
+      event.target.classList.contains(
+        ".lesson-button"
+        )
+      ) {
+      updateProgress();
+    }
+  }
+  );
       
         
     

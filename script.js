@@ -197,6 +197,42 @@ document.addEventListener(
     }
   }
   );
+const songRows =
+  document.querySelectorAll("table tr");
+songRows.forEach(function(row, index) {
+  if (index === 0) {
+    return;
+  }
+  const favoriteButton =
+    document.createElement("button");
+  favoriteButton.textContent = "";
+  favoriteButton.classList.add(
+    "favorite-button"
+    );
+  row.appendChild(
+    document.createElement("td")
+    );
+  row.lastElementChild(
+    favoriteButton
+    );
+  favoriteButton.addElementListener(
+    "click",
+    function() {
+      favoriteButton.classList.toggle(
+        "favorite"
+        );
+      if (
+        favoriteButton.classList.contains(
+          "favorite"
+          )
+        ) {
+        favoriteButton.textContent = "";
+      } else {
+        favoriteButton.textContent = "";
+      }
+    }
+    );
+  )};
       
         
     

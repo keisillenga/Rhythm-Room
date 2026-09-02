@@ -233,6 +233,20 @@ songRows.forEach(function(row, index) {
     }
     );
   )};
+const contactForm =
+  document.querySelector("form");
+if (contactForm) {
+  contactForm.addEventListener(
+    "submit",
+    function(event) {
+      event.preventDafault();
+      alert(
+        "Thank  you! Your message has been sent "
+        );
+      contactForm.reset();
+    }
+    );
+}
       
         
     

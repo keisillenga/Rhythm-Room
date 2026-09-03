@@ -247,7 +247,38 @@ if (contactForm) {
     }
     );
 }
-      
+ const notes = [
+   "",
+   "",
+   "",
+   "",
+   ""
+   ];
+function createMusicNote() {
+  const note =
+    document.createElement("div");
+  note.classList.add("music-note");
+  note.textContent =
+    notes[
+    Math.floor(
+      Math.rondom() * notes.length
+      )
+    ];
+  note.style.left =
+    Math.rondom() * 100 + "vw";
+  note.style.animationDuration =
+    8 + Math.rondom() * 10 + "s";
+  note.style.fontSize =
+    20 + Math.rondom() * 30 + "px";
+  document.body.appendChild(note);
+  setTimeout(function() {
+    note.remove();
+  }, 18000);
+}
+setInterval(
+  creatMusicNote,
+  2500
+  );
         
     
   

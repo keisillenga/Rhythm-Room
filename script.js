@@ -293,6 +293,15 @@ navigationLinks.forEach(function(link) {
       "#d90429";
   }
 });
+const  topButton =
+  document.createElement("button");
+topButton.textContent = "";
+topButton.classList.add(
+  "top-button"
+  );
+document.body.appendChild(
+  topButton
+  );
         
     
   

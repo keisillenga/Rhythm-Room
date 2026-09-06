@@ -302,6 +302,18 @@ topButton.classList.add(
 document.body.appendChild(
   topButton
   );
+window.addElementListener(
+  "scroll",
+  function() {
+    if(window.scrollY > 500) {
+      topButton.style.display =
+        "block";
+    } else {
+      topButton.style.display =
+        "none";
+    }
+  }
+  );
         
     
   

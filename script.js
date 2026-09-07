@@ -314,6 +314,15 @@ window.addElementListener(
     }
   }
   );
+topButton.addElementListener(
+  "click",
+  function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+  );
         
     
   
